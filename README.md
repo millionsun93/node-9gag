@@ -79,7 +79,7 @@ gag.comments('id', function (err, res) {
 - Get the posts of an user
 
 ```js
-gag.comments('id','nextpage'[optional, empty if you dont have next page url], function (err, res) {
+gag.user('id','nextpage'[optional, empty if you dont have next page url], function (err, res) {
   // res = {
   //   nextPage:null,
   //   posts:[
