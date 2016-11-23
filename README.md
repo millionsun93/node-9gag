@@ -47,8 +47,10 @@ gag.getItem('id', function (err, res) {
 - Access a section on 9gag (defaults to hot)
 
 ```js
-gag.section('section'[, hot/fresh], function (err, res) {
-  // res = [
+gag.section('section'[, hot/fresh], 'nextpage'[optional, empty if you dont have next page url], function (err, res) {
+  // res = {
+  //   nextPage:null,
+  //   posts:[
   //   {
   //     title: null,
   //     id: null,
@@ -56,7 +58,7 @@ gag.section('section'[, hot/fresh], function (err, res) {
   //     image: null,
   //     points: null,
   //     commentCount: null
-  //   }
-  // ]
+  //   }]
+  // }
 });
 ```
